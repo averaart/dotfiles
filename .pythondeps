@@ -3,3 +3,6 @@ pip install virtualenvwrapper
 mkdir -p $HOME/.virtualenvs
 
 pip install autoenv
+
+# for the c alias (syntax highlighted cat)
+sudo pip install Pygments

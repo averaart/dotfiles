@@ -4,5 +4,6 @@
 # you need the code CLI tools YOU FOOL.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# for the c alias (syntax highlighted cat)
-sudo pip install Pygments
+./.brew
+./.pythondeps
+
