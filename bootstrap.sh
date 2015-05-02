@@ -2,7 +2,17 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "install-deps.sh" --exclude "README.md" --exclude ".gitconfig_credentials" --exclude ".gitignore" -av . ~
+	rsync --exclude ".git/" \
+		  --exclude ".DS_Store" \
+		  --exclude "bootstrap.sh" \
+		  --exclude "install-deps.sh" \
+		  --exclude ".brew" \
+		  --exclude ".pythondeps" \
+		  --exclude ".osx" \
+		  --exclude "README.md" \
+		  --exclude ".gitconfig_credentials" \
+		  --exclude ".gitignore" \
+		  -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
