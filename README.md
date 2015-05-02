@@ -1,6 +1,6 @@
 # My dotfiles
 
-These are my dotfiles. Originally they were based on Mathias Bynens' [excellent and famous dotfiles](https://github.com/mathiasbynens/dotfiles), but I changed so much, it's not useful anymore for me to keep the repo as a fork.
+These are my dotfiles. Originally they were based on Mathias Bynens' [excellent and famous dotfiles](https://github.com/mathiasbynens/dotfiles), but Daan "[DandyDev](https://github.com/DandyDev)" Debie changed so much that it wasn't useful anymore to keep his repo as a fork. This is a fork of Daan's version.
 
 ## Installation
 
@@ -9,7 +9,7 @@ These are my dotfiles. Originally they were based on Mathias Bynens' [excellent 
 You can clone the repository wherever you want. (I like to keep it in `~/projects/tools/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/DandyDev/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/averaart/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -29,7 +29,7 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/DandyDev/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+cd; curl -#L https://github.com/averaart/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
 ```
 
 To update later on, just run that command again.
@@ -69,6 +69,8 @@ Some of these dotfiles depend on certain CLI utilities to be installed (Homebrew
 ./install-deps.sh
 ```
 
+This in turn calls `.brew` and `.pythondeps` because there were some interdependencies.
+
 ### Install Homebrew formulae
 
 When setting up a new Mac, you may want to install some common Homebrew formulae (after installing Homebrew, of course):
@@ -97,7 +99,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/DandyDev/dotfiles/issues)!
+[welcome](https://github.com/averaart/dotfiles/issues)!
 
 ## Thanks to…
 
