@@ -79,6 +79,8 @@ When setting up a new Mac, you may want to install some common Homebrew formulae
 ./.brew
 ```
 
+I've also added installation of common apps, based on [Hacker's Guide to Setting up Your Mac](http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac).
+
 ### Install Python dependencies
 
 Some of these dotfiles assume Python development to be present. To make sure it is, run the following:

@@ -34,7 +34,36 @@ brew install python --framework
 brew install bash-completion
 brew install hub
 
-brew install Caskroom/cask/java
+# Install some apps and tools
+# Based on http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
+apps=(
+	appcleaner
+	dropbox
+	firefox
+	flash
+	google-chrome
+	java
+	mailbox
+	mou
+	nvalt
+	qlcolorcode
+	qlmarkdown
+	qlprettypatch
+	qlstephen
+	quicklook-json
+	spectacle
+	spotify
+	sublime-text3
+	vagrant
+	virtualbox
+	vlc
+)
+
+# Install apps to /Applications
+# Default is: /Users/$user/Applications
+echo "installing apps..."
+brew cask install --appdir="/Applications" ${apps[@]}
+
 
 # Remove outdated versions from the cellar
 brew cleanup
