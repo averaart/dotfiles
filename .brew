@@ -59,6 +59,11 @@ apps=(
 	vlc
 )
 
+# Enable alternate versions of Casks
+# Currently required to install Sublime Text 3
+echo "Fetching alternate versions..."
+brew tap caskroom/versions
+
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
